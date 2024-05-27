@@ -6,7 +6,21 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "NotX",
-  description: "Your Yard Resources Repository",
+  description: "A connected workspace where better, faster work happens",
+  icons: {
+    icon: [
+      {
+        media: "(prefers-color-scheme:light)",
+        url: "/dark-logo.svg",
+        href: "/dark-logo.svg",
+      },
+      {
+        media: "(prefers-color-scheme:dark)",
+        url: "/light-logo.svg",
+        href: "/light-logo.svg",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -16,7 +30,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div>{children}</div>
+      </body>
     </html>
   );
 }
