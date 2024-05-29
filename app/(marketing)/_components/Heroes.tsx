@@ -25,11 +25,10 @@ export default function Heroes() {
               Accurate Shipping & Distribution Data.
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              An intuitive app designed to streamline the process of capturing
-              crutial information such as container & trailer numbers, seal
-              numbers and freight bills, providing businesses with real-tiem
-              insights and precise documentation for efficient shipping and
-              distribution operations.
+              An intuitive app that streams the process of capturing crutial
+              information to provide businesses with real-time insights and
+              precise documentation for efficient shipping and distribution
+              operations.
             </p>
             <div className="mt-10 flex justify-center items-center gap-x-6">
               <Button>Enter NoteX</Button>
