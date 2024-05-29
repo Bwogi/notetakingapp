@@ -8,17 +8,20 @@ export default function Heroes() {
       <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
         <div className="px-6 pb-24 pt-5 sm:pb-32 lg:col-span-7 lg:px-0 lg:pb-56 lg:pt-48 xl:col-span-6">
           <div className="flex flex-col justify-center items-center mx-auto max-w-2xl lg:mx-0">
-            <img className="h-28" src="/light_logo.jpg" alt="Odelabs" />
+            <img className="h-28" src="/dark_logo.jpg" alt="Odelabs" />
             <div className="hidden sm:mt-32 sm:flex lg:mt-16">
               <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-500 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                 Another successful experiment from Odelabs.{" "}
-                <a
+                {/* <a
                   href="#"
                   className="whitespace-nowrap font-semibold text-indigo-600"
-                >
-                  <span className="absolute inset-0" aria-hidden="true" />
+                > */}
+                <span className="absolute inset-0" aria-hidden="true" />
+                {/* Login <span aria-hidden="true">&rarr;</span> */}
+                <Button variant="link">
                   Login <span aria-hidden="true">&rarr;</span>
-                </a>
+                </Button>
+                {/* </a> */}
               </div>
             </div>
             <h1 className="mt-24 text-4xl font-bold tracking-tight text-gray-900 sm:mt-10 sm:text-6xl">
