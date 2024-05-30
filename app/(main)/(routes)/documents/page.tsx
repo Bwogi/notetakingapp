@@ -56,7 +56,13 @@ export default function Documents() {
               href="/dashboard"
               className="flex items-center gap-2 font-semibold"
             >
-              <Image className="h-10" src="/dark_logo.jpg" alt="Odelabs" />
+              <Image
+                className="h-10"
+                height={40}
+                width={40}
+                src="/dark_logo.jpg"
+                alt="Odelabs"
+              />
               <span className="">NoteX</span>
             </Link>
             <Button variant="outline" size="icon" className="ml-auto h-8 w-8">
@@ -143,7 +149,13 @@ export default function Documents() {
                   href="#"
                   className="flex items-center gap-2 text-lg font-semibold"
                 >
-                  <Image className="h-10" src="/dark_logo.jpg" alt="Odelabs" />
+                  <Image
+                    height={40}
+                    width={40}
+                    className="h-10"
+                    src="/dark_logo.jpg"
+                    alt="Odelabs"
+                  />
                   <span className="sr-only">NoteX</span>
                 </Link>
                 <Link
