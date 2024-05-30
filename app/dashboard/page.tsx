@@ -44,6 +44,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Label } from "@radix-ui/react-context-menu";
+import Image from "next/image";
 
 export default function Dashboard() {
   return (
@@ -55,7 +56,7 @@ export default function Dashboard() {
               href="/dashboard"
               className="flex items-center gap-2 font-semibold"
             >
-              <img className="h-10" src="/dark_logo.jpg" alt="Odelabs" />
+              <Image className="h-10" src="/dark_logo.jpg" alt="Odelabs" />
               <span className="">NoteX</span>
             </Link>
             <Button variant="outline" size="icon" className="ml-auto h-8 w-8">
@@ -142,7 +143,7 @@ export default function Dashboard() {
                   href="#"
                   className="flex items-center gap-2 text-lg font-semibold"
                 >
-                  <img className="h-10" src="/dark_logo.jpg" alt="Odelabs" />
+                  <Image className="h-10" src="/dark_logo.jpg" alt="Odelabs" />
                   <span className="sr-only">NoteX</span>
                 </Link>
                 <Link
