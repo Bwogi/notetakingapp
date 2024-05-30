@@ -1,6 +1,9 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
+import { ArrowSmallDownIcon } from "@heroicons/react/20/solid";
+import { ArrowBigDown, ArrowDown, ArrowDown01Icon } from "lucide-react";
 
 export default function Heroes() {
   return (
@@ -18,9 +21,16 @@ export default function Heroes() {
                 > */}
                 <span className="absolute inset-0" aria-hidden="true" />
                 {/* Login <span aria-hidden="true">&rarr;</span> */}
-                <Button variant="link">
-                  Login <span aria-hidden="true">&rarr;</span>
-                </Button>
+                <SignedIn>
+                  <a href="/dashboard">
+                    <Button variant="link">
+                      See more{" "}
+                      <span aria-hidden="true">
+                        <ArrowDown />
+                      </span>
+                    </Button>
+                  </a>
+                </SignedIn>
                 {/* </a> */}
               </div>
             </div>
@@ -34,7 +44,17 @@ export default function Heroes() {
               operations.
             </p>
             <div className="mt-10 flex justify-center items-center gap-x-6">
-              <Button>Enter NoteX</Button>
+              {/* <Button>Enter NoteX</Button> */}
+              <SignedOut>
+                <SignInButton mode="modal">
+                  <Button>Sign In</Button>
+                </SignInButton>
+              </SignedOut>
+              <SignedIn>
+                <a href="/dashboard">
+                  <Button>NoteX | Dashboard</Button>
+                </a>
+              </SignedIn>
             </div>
           </div>
         </div>
