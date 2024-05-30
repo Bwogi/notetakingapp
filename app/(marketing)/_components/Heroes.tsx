@@ -29,7 +29,7 @@ export default function Heroes() {
                 <span className="absolute inset-0" aria-hidden="true" />
                 {/* Login <span aria-hidden="true">&rarr;</span> */}
                 <SignedIn>
-                  <a href="/dashboard">
+                  <a href="/">
                     <Button variant="link">
                       See more{" "}
                       <span aria-hidden="true">
@@ -58,7 +58,7 @@ export default function Heroes() {
                 </SignInButton>
               </SignedOut>
               <SignedIn>
-                <a href="/dashboard">
+                <a href="/">
                   <Button>NoteX | Dashboard</Button>
                 </a>
               </SignedIn>
