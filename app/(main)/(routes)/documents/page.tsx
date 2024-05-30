@@ -264,7 +264,7 @@ export default function Documents() {
                       <DialogTitle>Add Container/ Trailer Info</DialogTitle>
                       <DialogDescription>
                         Add container and trailer details here. Click submit
-                        when you're done.
+                        when you are done.
                       </DialogDescription>
                     </DialogHeader>
                     <div className="grid gap-4 py-4">
